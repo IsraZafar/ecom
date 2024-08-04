@@ -1,58 +1,59 @@
+
 import 'package:flutter/material.dart';
 
-class popularscreen extends StatefulWidget {
-  const popularscreen({super.key});
+class PopularScreen extends StatefulWidget {
+  const PopularScreen({super.key});
 
   @override
-  State<popularscreen> createState() => _popularscreenState();
+  State<PopularScreen> createState() => _PopularScreenState();
 }
 
-class _popularscreenState extends State<popularscreen> {
+class _PopularScreenState extends State<PopularScreen> {
   @override
   Widget build(BuildContext context) {
-       var child;
     return Scaffold(
       appBar: AppBar(
-    title: Text("Popular nproduct"),
-      ),body: Column(
+        title: Text("Popular Product"),
+      ),
+      body: Column(
         children: <Widget>[
-         Stack(), Row(
+          // Icons placed in a row
+          Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [],
+            children: [
+              Icon(Icons.search),
+              SizedBox(width: 20),
+              Icon(Icons.shopping_basket_sharp),
+            ],
           ),
-          Icon(Icons.search),
-          Icon(Icons.shopping_basket_sharp),
-          child : <Widget> Center[
-              child: Image.asset("assets/images/cardcap.png"),
-Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-       ),],
-child : <Widget> Center[
-              child: Image.asset("assets/images/cardvase.png"),
-Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-       ),],
-       
-       child : <Widget> Center[
-              child: Image.asset("assets/images/card clock.png"),
-Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-       ),],
-       child : <Widget> Center[
-              child: Image.asset("assets/images/card watch.png"),
-Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-       ),],
-
-child : <Widget> Center[
-              child: Image.asset("assets/images/card headphone.png "),
-Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-       ),],     
-
-
-   ], ),
-    
+          // Images displayed in a column
+          Expanded(
+            child: ListView(
+              children: [
+                Center(
+                  child: Image.asset("assets/images/cardcap.png"),
+                ),
+                SizedBox(height: 20),
+                Center(
+                  child: Image.asset("assets/images/cardvase.png"),
+                ),
+                SizedBox(height: 20),
+                Center(
+                  child: Image.asset("assets/images/card_clock.png"), // Fixed asset name (no space)
+                ),
+                SizedBox(height: 20),
+                Center(
+                  child: Image.asset("assets/images/card_watch.png"), // Fixed asset name (no space)
+                ),
+                SizedBox(height: 20),
+                Center(
+                  child: Image.asset("assets/images/card_headphone.png"), // Fixed asset name (no space)
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

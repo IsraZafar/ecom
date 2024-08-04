@@ -1,6 +1,8 @@
 import 'package:ecommerce/category.dart';
 import 'package:ecommerce/homescreen.dart';
 import 'package:ecommerce/loginscreen.dart';
+import 'package:ecommerce/popular%20product.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 //import 'package:loginscreen/login%20screen.dart';
@@ -21,6 +23,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Loginscreen(),
+     // home:Category(),
+      //home:popularscreen().
+     // Home:Homescreen(),
+     // home:product detail(),
+      
     );
     return materialApp;
   }
