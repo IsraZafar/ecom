@@ -1,8 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 //import 'package:flutter/rendering.dart';
-
 
 class Loginscreen extends StatefulWidget {
   const Loginscreen({super.key});
@@ -25,8 +25,7 @@ class _LoginscreenState extends State<Loginscreen> {
           begin: Alignment.topRight,
           end: Alignment.bottomLeft,
           colors: [
-            Colors.yellow,
-            Colors.blue,
+            Colors.white,
           ],
         ),
       ),
@@ -70,7 +69,8 @@ class _LoginscreenState extends State<Loginscreen> {
       decoration: BoxDecoration(
           border: Border.all(color: Colors.white, width: 2),
           shape: BoxShape.circle),
-      child: const Icon(Icons.person, color: Colors.white, size: 120),
+      child: Text("treegram"),
+      //child: const Icon(Icons.person, color: Colors.white, size: 120),
     );
   }
 

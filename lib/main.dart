@@ -1,3 +1,5 @@
+import 'package:ecommerce/category.dart';
+import 'package:ecommerce/homescreen.dart';
 import 'package:ecommerce/loginscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
@@ -14,8 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var materialApp = MaterialApp(
-      title:'Login screen',
-    
+      title: 'Login screen',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
